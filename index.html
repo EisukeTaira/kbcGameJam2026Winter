@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kbc Game Jam 2026 Winter - Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portal.css">
+</head>
+
+<body>
+    <header class="portal-header">
+        <div class="container">
+            <h1 class="event-title">kbc Game Jam <span class="accent">2026 Winter</span></h1>
+            <p class="event-desc">学生たちの熱意が詰まった、革新的なゲームの数々。</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="section-heading">Showcase</h2>
+        <!-- Team Grid Generated via Script -->
+        <div class="team-grid" id="team-grid">
+            <!-- Cards will be populated here -->
+        </div>
+    </main>
+
+    <footer class="portal-footer">
+        <p>&copy; 2026 kbc Game Jam Committee.</p>
+    </footer>
+
+    <script>
+        const teams = [
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+            'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+            'u'
+        ];
+
+        const grid = document.getElementById('team-grid');
+
+        teams.forEach(team => {
+            const teamId = 'Team ' + team.toUpperCase();
+
+            const card = document.createElement('a');
+            card.href = `teams/team_${team}/index.html`;
+            card.className = 'team-card';
+
+            // To make it look a bit more lively until students edit it, 
+            // we'll put placeholders. 
+            // In a real scenario, this distinct styling might help distinguish them.
+
+            card.innerHTML = `
+                <div class="card-image">
+                    <div class="placeholder-thumb">${teamId} Game</div>
+                </div>
+                <div class="card-content">
+                    <h3 class="game-title">Game Title ${team.toUpperCase()}</h3>
+                    <p class="team-name">${teamId}</p>
+                    <p class="game-desc">A new game by ${teamId}...</p>
+                </div>
+            `;
+
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+
+</html>

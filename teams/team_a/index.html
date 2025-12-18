@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- チームごとのタイトルに変更してください -->
+    <title>{{作品タイトル}} - KBC Game Jam 2026 Winter</title>
+    <!-- ページの説明文を変更してください -->
+    <meta name="description" content="ここへゲームの説明文を短く入力してください">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <!-- ゲームのタイトル (左上のロゴ) -->
+            <h1 class="logo">{{GamesTitle}}</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#hero">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#download" class="btn-nav">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content fade-in">
+                <!-- キャッチコピー -->
+                <h2 class="hero-title">Enter <span class="accent">{{Title}}</span></h2>
+                <!-- チーム名など -->
+                <p class="hero-tagline">Created by {{TeamName}}</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">Download</a>
+                    <a href="#about" class="btn btn-secondary">About</a>
+                </div>
+            </div>
+            <!-- 背景画像を変更する場合は style.css の .hero-background を編集するか、ここにimgタグを入れてください -->
+            <div class="hero-background"></div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h3 class="section-title fade-in">About the Game</h3>
+                <div class="about-content fade-in">
+                    <div class="about-text">
+                        <!-- ゲームの紹介文 -->
+                        <p>{{ここへゲームの概要を書いてください。どんなゲームですか？}}</p>
+                        <p>{{ここへ詳細な説明を書いてください。ストーリーや世界観など。}}</p>
+                        <ul class="features-list">
+                            <!-- アピールポイント -->
+                            <li>⚡ <strong>ポイント1</strong>: {{説明文}}</li>
+                            <li>🎨 <strong>ポイント2</strong>: {{説明文}}</li>
+                            <li>🎵 <strong>ポイント3</strong>: {{説明文}}</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <!-- ゲームのメインビジュアル画像 (imgタグに差し替えてください) -->
+                        <div class="placeholder-img">{{MainVisual}}</div>
+                        <!-- 例: <img src="images/main.png" alt="Main Visual"> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <div class="container">
+                <h3 class="section-title fade-in">Gallery</h3>
+                <div class="gallery-grid">
+                    <!-- スクリーンショット (imgタグに差し替えてください) -->
+                    <div class="gallery-item fade-in delay-100">
+                        <div class="placeholder-img">{{ScreenShot1}}</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-200">
+                        <div class="placeholder-img">{{ScreenShot2}}</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-300">
+                        <div class="placeholder-img">{{ScreenShot3}}</div>
+                    </div>
+                    <div class="gallery-item fade-in delay-400">
+                        <div class="placeholder-img">{{ScreenShot4}}</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="section download">
+            <div class="container fade-in">
+                <h3 class="section-title">Play the Game</h3>
+                <p class="download-desc">Google Driveからダウンロードしてプレイしよう！</p>
+                <div class="download-buttons">
+                    <!-- Google Driveの共有リンクをhrefに設定してください -->
+                    <a href="https://drive.google.com/..." target="_blank" class="btn btn-primary btn-large">
+                        <span class="icon">📁</span> Download via Google Drive (PC)
+                    </a>
+                </div>
+                <p class="web-play-link">※ ZIPファイルを解凍して `Game.exe` を実行してください。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 kbc Game Jam Committee.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
