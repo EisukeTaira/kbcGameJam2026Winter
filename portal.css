@@ -148,3 +148,49 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #0a0a0a;
 }
+/* Event Overview */
+.event-overview {
+    margin-bottom: 4rem;
+}
+
+.overview-text {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.8;
+    max-width: 800px;
+}
+
+
+/* Filter Nav */
+.filter-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-family: var(--font-main);
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-color);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(124, 77, 255, 0.4);
+}
+
