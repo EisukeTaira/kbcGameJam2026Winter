@@ -11,10 +11,10 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>KBC Game Jam 2026 Winter</h1>
+        <h1>kbc Game Jam 2026 Winter</h1>
       <nav>
         <a href="#about">概要</a>
-        <a href="#features">特徴</a>
+        <a href="#games">作品一覧</a>
         <a href="#download">ダウンロード</a>
       </nav>
     </div>
@@ -22,17 +22,59 @@
 
   <main class="container">
     <section id="about">
-      <h2>概要</h2>
-      <p>このページは GitHub Pages に公開できる静的サイトです。リポジトリの設定から Pages を有効化することで公開できます。</p>
+      <h2>ゲームジャムについて</h2>
+      <p>
+          kbc Game Jam 2026 Winter は、短期間でゲームを作り上げる開発イベントです。参加者はチームを組み、
+          共通テーマに沿ったゲームを企画・制作します。ここでは各チームが制作したゲームを紹介し、
+          それぞれの詳細ページへアクセスできるようにしています。
+      </p>
+      <ul>
+        <li>開催期間: 2026年1月</li>
+        <li>テーマ例: "つながり", "反転", "制約の中の創造"</li>
+        <li>制作環境: Unity / Unreal / Web 等、自由</li>
+      </ul>
     </section>
 
-    <section id="features">
-      <h2>特徴</h2>
-      <ul>
-        <li>シンプルな静的サイト構成（HTML/CSS/JS）</li>
-        <li>レスポンシブ対応</li>
-        <li>アセットは <code>assets/</code> ディレクトリに配置</li>
-      </ul>
+    <section id="games">
+      <h2>各チームのゲーム</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img src="assets/images/team-alpha-thumb.jpg" alt="Team Alpha ゲームのサムネイル" class="card-thumb" />
+          <div class="card-body">
+            <h3 class="card-title">Team Alpha - "Echo Link"</h3>
+            <p class="card-desc">反転する世界で音の軌跡を辿るパズルアクション。シンプル操作で奥深い攻略性。</p>
+            <div class="card-actions">
+              <a class="btn" href="pages/team-alpha/">チームページへ</a>
+              <a class="btn btn-secondary" href="#" aria-disabled="true">デモ</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/team-bravo-thumb.jpg" alt="Team Bravo ゲームのサムネイル" class="card-thumb" />
+          <div class="card-body">
+            <h3 class="card-title">Team Bravo - "Reverse Run"</h3>
+            <p class="card-desc">時間を巻き戻して罠を回避するランゲーム。ミスも戦略になる高速プレイ。</p>
+            <div class="card-actions">
+              <a class="btn" href="pages/team-bravo/">チームページへ</a>
+              <a class="btn btn-secondary" href="#" aria-disabled="true">デモ</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/images/team-charlie-thumb.jpg" alt="Team Charlie ゲームのサムネイル" class="card-thumb" />
+          <div class="card-body">
+            <h3 class="card-title">Team Charlie - "Boundless"</h3>
+            <p class="card-desc">限られた資源で基地を拡張するローグライク。取捨選択が勝敗を分ける。</p>
+            <div class="card-actions">
+              <a class="btn" href="pages/team-charlie/">チームページへ</a>
+              <a class="btn btn-secondary" href="#" aria-disabled="true">デモ</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="muted">サムネイル画像は <code>assets/images/</code> に配置してください。</p>
     </section>
 
     <section id="download">
@@ -47,7 +89,7 @@
   <footer class="site-footer">
     <div class="container">
       <small>
-        © 2026 KBC Game Jam Winter / このページは GitHub Pages でホストされています。
+        © 2026 kbc Game Jam Winter / このページは GitHub Pages でホストされています。
       </small>
     </div>
   </footer>
