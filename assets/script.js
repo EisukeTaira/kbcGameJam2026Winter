@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
   const demo = document.getElementById('demo-link');
   if (demo) {
     demo.addEventListener('click', (e) => {
       e.preventDefault();
-      alert('�����Ƀf���y�[�W�̃����N��ݒ肵�Ă��������B');
+      alert('ここにデモページのリンクを設定してください。');
     });
   }
 });
